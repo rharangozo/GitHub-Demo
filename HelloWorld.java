@@ -5,7 +5,15 @@ public class HelloWorld {
 	//később
   }
 
-  public String message;
+  private String message;
+
+  public String getMessage() {
+    return message;
+  }
+
+  public void setMessage(String m) {
+    this.message = m;
+  }
 
   public void printMessage() {
     System.out.println(message);
@@ -13,7 +21,7 @@ public class HelloWorld {
 
   public static void main(String[] args) {
     HelloWorld hw = new HelloWorld();
-    hw.message = "Hello World!";
+    hw.setMessage("Hello World!");
     hw.printMessage();
   }
  
