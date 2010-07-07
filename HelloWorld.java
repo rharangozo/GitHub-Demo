@@ -5,8 +5,16 @@ public class HelloWorld {
 	//később
   }
 
+  public String message;
+
+  public void printMessage() {
+    System.out.println(message);
+  }
+
   public static void main(String[] args) {
-    System.out.println("Hello World!");
+    HelloWorld hw = new HelloWorld();
+    hw.message = "Hello World!";
+    hw.printMessage();
   }
  
 } 
